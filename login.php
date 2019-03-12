@@ -8,8 +8,6 @@ $con = mysql_connect("127.0.0.1", "root", "root") or die
 ("Sem conexão com o servidor");
 $select = mysql_select_db("server") or die("Sem acesso ao DB");
 
-// A variavel $result pega as varias $login e $senha, faz uma
-//pesquisa na tabela de usuarios
 $result = mysql_query("SELECT * FROM `USUARIO` 
 WHERE `LOGIN` = '$login' AND `SENHA`= '$senha'");
 
